@@ -1,8 +1,14 @@
 <div class="login-container">
   <h1 class="v1">Login</h1>
 
-  <input type="email" placeholder="Email" />
-<input type="password" placeholder="Password" />
+  <input type="email" placeholder="Email" [ngModel]="email()" (ngModelChange)="email.set($event)"/>
 
-  <button>Login</button>k
+<input type="password" placeholder="Password" [ngModel]="password()" (ngModelChange)="password.set($event)" />
+
+  <button (click)="onLogin()">Login</button>
+
+
+  @if(errorMessage()){
+    <p style="color: red;">{{ errorMessage() }}</p>
+  }
 </div>
