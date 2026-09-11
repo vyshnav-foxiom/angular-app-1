@@ -1,0 +1,36 @@
+.login-container {
+  padding: 15px;
+  width: 300px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #162c30;
+}
+
+input {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #753a3a;
+  background-color: #bfe6ec;
+  border-radius: 8px;
+  height: 50px;
+}
+
+button {
+  padding: 15px;
+  border: 1px solid #753a3a;
+  background-color: #4cafbe;
+  border-radius: 8px;
+  height: 60px;
+  width: 250px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.v1 {
+  color: antiquewhite;
+  font-weight: bold;
+  text-align: center;
+}
