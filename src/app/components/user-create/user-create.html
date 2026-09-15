@@ -1,0 +1,21 @@
+<form [formGroup]="userForm">
+
+  <input type="text" formControlName="name">
+
+  <input type="email" formControlName="email">
+
+  <input type="password" formControlName="password">
+
+  <input type="password" formControlName="confirmPassword">
+
+  <select formControlName="role">
+    <option value="">Select Role</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+
+  <button type="button" (click)="onSubmit()">
+    Create User
+  </button>
+
+</form>

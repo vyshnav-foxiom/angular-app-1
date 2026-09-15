@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,4 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
-export class Dashboard {}
+
+export class Dashboard {
+
+private router = inject(Router)
+
+
+  handleUser(){
+    this.router.navigate(['/users/create'])
+  }
+}
